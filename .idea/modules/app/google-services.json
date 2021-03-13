@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "149296171519",
+    "project_id": "private-messaging-20",
+    "storage_bucket": "private-messaging-20.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149296171519:android:6a86ee6f8378ee5babffca",
+        "android_client_info": {
+          "package_name": "com.PAS.privatemessaging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149296171519-hr8355779kv5hllogojnjbc9mdolkjdg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDo-mPLisczfuESJBaDMjZaKtrLFkXlDns"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "149296171519-hr8355779kv5hllogojnjbc9mdolkjdg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149296171519:android:6bfcb1395b9c666aabffca",
+        "android_client_info": {
+          "package_name": "com.example.privatemessaging20"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149296171519-m5evncqlqfqpiev71m0g4r6qumud7h8e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.privatemessaging20",
+            "certificate_hash": "48c1a9324e19df14ae1fe37d663de962db8db32c"
+          }
+        },
+        {
+          "client_id": "149296171519-hr8355779kv5hllogojnjbc9mdolkjdg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDo-mPLisczfuESJBaDMjZaKtrLFkXlDns"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "149296171519-hr8355779kv5hllogojnjbc9mdolkjdg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
