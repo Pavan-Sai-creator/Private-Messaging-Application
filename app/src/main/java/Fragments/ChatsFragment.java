@@ -13,6 +13,8 @@ import com.example.privatemessaging20.R;
 
 public class ChatsFragment extends Fragment {
 
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

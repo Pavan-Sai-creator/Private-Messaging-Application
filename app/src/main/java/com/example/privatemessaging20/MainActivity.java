@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TableLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -82,11 +81,17 @@ public class MainActivity extends AppCompatActivity {
 
         ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
 
+
         viewPagerAdapter.addFragment(new ChatsFragment(), "Chats");
         viewPagerAdapter.addFragment(new UsersFragment(), "Users");
+
         viewPager.setAdapter(viewPagerAdapter);
 
         tabLayout.setupWithViewPager(viewPager);
+
+
+
+
 
     }
 
@@ -108,15 +113,17 @@ public class MainActivity extends AppCompatActivity {
 
         return false;
     }
+
     class ViewPagerAdapter extends FragmentPagerAdapter {
 
         private ArrayList<Fragment> fragments;
         private ArrayList<String> titles;
 
-        ViewPagerAdapter (FragmentManager fm){
+
+        ViewPagerAdapter(FragmentManager fm){
             super(fm);
-            this.fragments=new ArrayList<>();
-            this.titles=new ArrayList<>();
+            this.fragments = new ArrayList<>();
+            this.titles = new ArrayList<>();
         }
 
         @NonNull
@@ -130,12 +137,10 @@ public class MainActivity extends AppCompatActivity {
             return fragments.size();
         }
 
-        public void addFragment (Fragment fragment, String title){
+        public void addFragment(Fragment fragment, String title){
             fragments.add(fragment);
             titles.add(title);
         }
-
-        //ctrl + O
 
         @Nullable
         @Override
