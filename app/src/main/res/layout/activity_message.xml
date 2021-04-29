@@ -5,7 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#e6e6e6"
+    android:clickable="true"
     tools:context=".MessageActivity">
+
+
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/bar_layout"
@@ -21,17 +24,31 @@
             app:popupTheme="@style/MenuStyle">
 
             <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
                 android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:id="@+id/profile_image"/>
+                android:layout_height="30dp" />
+
             <TextView
+                android:id="@+id/username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/username"
+                android:layout_marginStart="25dp"
                 android:layout_marginLeft="25dp"
                 android:textColor="#fff"
-                android:textStyle="bold"
-                android:layout_marginStart="25dp"/>
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btVar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Encrypt"
+                android:layout_marginLeft="40dp" />
+            <Button
+                android:id="@+id/btVar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Decrypt"
+                android:layout_marginLeft="1dp" />
 
 
 
@@ -39,9 +56,13 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
+
+
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:longClickable="true"
+        android:textIsSelectable="true"
         android:id="@+id/recycler_view"
         android:layout_below="@+id/bar_layout"
         android:layout_above="@+id/bottom"/>

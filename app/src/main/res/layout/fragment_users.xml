@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#d97a7a"
+    android:background="#F5F7F8"
     tools:context="Fragments.UsersFragment">
 
     <androidx.recyclerview.widget.RecyclerView

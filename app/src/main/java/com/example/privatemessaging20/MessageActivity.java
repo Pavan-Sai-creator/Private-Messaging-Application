@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
@@ -35,6 +36,8 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class MessageActivity extends AppCompatActivity {
 
+    Button enc, dec;
+
     CircleImageView profile_image;
     TextView username;
 
@@ -55,6 +58,9 @@ public class MessageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_message);
+
+        enc = findViewById(R.id.btVar1);
+        dec = findViewById(R.id.btVar2);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -77,6 +83,29 @@ public class MessageActivity extends AppCompatActivity {
         username = findViewById(R.id.username);
         btn_send = findViewById(R.id.btn_send);
         text_send = findViewById(R.id.text_send);
+
+        // CHUTKU CODE START//
+
+        enc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Intent function to move to another activity
+                Intent intent = new Intent(getApplicationContext(), Encoder.class);
+                startActivity(intent);
+            }
+        });
+
+        // onClick function for decryption
+        dec.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Intent function to move to another activity
+                Intent intent = new Intent(getApplicationContext(), DecryptAuth.class);
+                startActivity(intent);
+            }
+        });
+
+        // CHUTKU END
 
 
         intent = getIntent();
